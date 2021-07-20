@@ -1,0 +1,5 @@
+dude.online
+suporte
+suporte.local
+admin
+script.python

@@ -1,0 +1,1 @@
+Erro no login através da porta 22 no ip - 10.240.30.99:[Errno None] Unable to connect to port 22 on 10.240.30.99
