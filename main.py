@@ -13,8 +13,8 @@ import requests
 
 iplist = []
 timelist = []
-login = 'dude.online'
-passwd = '@ddonl1n3'
+login = 'montanaro'
+passwd = '123456789'
 
 
 class TimeoutException(Exception):
@@ -60,7 +60,7 @@ def config_mass():
             ssh.connect(iplist[line], username=login, password=passwd, port=accessport, look_for_keys=False,
                         allow_agent=False)
             stdin, stdout, stderr = ssh.exec_command(
-                "/radius add address=191.7.212.14 comment=FreeRadius.online.net.br secret=0nl@dm00 service=login")
+                "/radius add address=191.7.212.14 comment=FreeRadius.online.net.br secret=secret service=login")
             stdin, stdout, stderr = ssh.exec_command("/user aaa set use-radius=yes")
             stdin, stdout, stderr = ssh.exec_command(
                 "/user add group=full name=noc password=Eqs8qMX5ZgEmRCtG comment=AcessoRestritoAoSetorDoNoc")
